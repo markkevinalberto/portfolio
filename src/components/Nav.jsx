@@ -13,7 +13,7 @@ export default function Nav() {
         <div className="hidden items-center gap-5 font-mono-label text-xs text-white/60 md:flex">
           <a href="#work" className="transition hover:text-white">Work</a>
           <a href="#stack" className="transition hover:text-white">Stack</a>
-          <a href="/resume.pdf" target="_blank" rel="noopener" className="transition hover:text-white">Resume</a>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener" className="transition hover:text-white">Resume</a>
           <a href="#contact" className="transition hover:text-white">Contact</a>
         </div>
         <a

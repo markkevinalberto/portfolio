@@ -53,7 +53,7 @@ export default function CTAFooter() {
             >
               GitHub
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener" className="transition hover:text-amber">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener" className="transition hover:text-amber">
               Resume
             </a>
             <a href="#top" className="transition hover:text-amber">
