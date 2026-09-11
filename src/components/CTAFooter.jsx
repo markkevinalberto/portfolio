@@ -19,11 +19,11 @@ export default function CTAFooter() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="mailto:markkevinalberto@gmail.com"
+              href="mailto:mark.kevin.alberto@jcsgo.org"
               className="flex items-center gap-2 rounded-full bg-amber px-7 py-3.5 font-mono-label text-sm font-medium text-ink-950 transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(242,166,61,0.6)]"
             >
               <EnvelopeSimple size={16} weight="bold" />
-              markkevinalberto@gmail.com
+              mark.kevin.alberto@jcsgo.org
             </a>
             <a
               href="https://github.com/markkevinalberto"
@@ -42,7 +42,7 @@ export default function CTAFooter() {
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3">
           <span className="font-mono-label text-xs text-white/35">Mark Kevin Alberto, 2026</span>
           <div className="flex gap-5 font-mono-label text-xs text-white/35">
-            <a href="mailto:markkevinalberto@gmail.com" className="transition hover:text-amber">
+            <a href="mailto:mark.kevin.alberto@jcsgo.org" className="transition hover:text-amber">
               Email
             </a>
             <a
