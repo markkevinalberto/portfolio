@@ -4,9 +4,10 @@ import requestPortal from "./assets/request-portal.png";
 import declareImg from "./assets/declare.png";
 import rentalImg from "./assets/rental.png";
 import akeriusImg from "./assets/akeriussms.jpg";
+import qrGeneratorImg from "./assets/qr-generator.jpg";
 
 export const stats = [
-  { num: "6", label: "public systems shipped", big: true },
+  { num: "8", label: "public systems shipped", big: true },
   { num: "5", label: "church buildings covered" },
   { num: "40", label: "bookable rooms tracked" },
   { num: "1", label: "Postgres constraint, zero conflicts" },
@@ -74,6 +75,27 @@ export const projects = [
     description:
       "A Kotlin Android app that turns a spare phone into JCSGO's SMS gateway, texting approvals, rejections, and edits from three different apps.",
     chips: ["Kotlin", "Android"],
+    link: null,
+  },
+  {
+    id: "qr-roster",
+    kicker: "Classroom tool",
+    title: "Student QR Roster Generator",
+    image: qrGeneratorImg,
+    description:
+      "Paste a class list, generate one scannable code per student for recitation and attendance, and export the whole set as a ZIP. No installs, runs entirely in the browser.",
+    chips: ["Vanilla JS", "No login"],
+    link: "https://markkevinalberto.github.io/qr-Generator/student-qr-roster-generator.html",
+  },
+  {
+    id: "grade-hub",
+    kicker: "Google Sheets add-on",
+    title: "Grade Hub",
+    type: "code",
+    files: ["Code.gs", "Setup.gs", "Submit.gs", "Util.gs", "FullEntry.gs"],
+    description:
+      "An Apps Script bound to the grading sheet: adds a Grade Hub menu, loads a roster on demand, and walks a teacher through cascading dropdowns instead of raw spreadsheet cells.",
+    chips: ["Apps Script", "Google Sheets"],
     link: null,
   },
 ];
