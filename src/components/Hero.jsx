@@ -48,19 +48,19 @@ export default function Hero() {
         <h1 className="overflow-hidden">
           <span className="block overflow-hidden">
             <span className="hero-line block text-[clamp(2.75rem,7vw,5rem)] font-black leading-[1.02] tracking-tight text-white">
-              Five buildings, forty rooms.
+              Websites, apps, and automations.
             </span>
           </span>
           <span className="block overflow-hidden">
             <span className="hero-line block text-[clamp(2.75rem,7vw,5rem)] font-black leading-[1.02] tracking-tight text-amber">
-              Zero double-bookings.
+              Eight shipped. All real.
             </span>
           </span>
         </h1>
 
         <p className="hero-sub mt-8 max-w-xl text-lg text-white/60">
-          I&rsquo;m Kevin, JCSGO&rsquo;s multimedia director. I also build the church&rsquo;s
-          website and its room and court booking systems.
+          I&rsquo;m Kevin, JCSGO&rsquo;s multimedia director. Next.js, Astro, Kotlin, Apps
+          Script, whatever a problem actually needs.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
