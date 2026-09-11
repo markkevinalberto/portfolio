@@ -38,10 +38,10 @@
       --text-faint: #838c86;
       --line: #d2d5cb;
       --line-strong: #b7bcae;
-      --accent: #b8690f;
-      --accent-2: #8f5109;
+      --accent: #96570d;
+      --accent-2: #7d4709;
       --accent-text: #fff8ee;
-      --accent-soft: rgba(184,105,15,.10);
+      --accent-soft: rgba(150,87,13,.10);
       --ok: #1f9d5c;
       --danger: #c8393c;
       --shadow: 0 20px 50px rgba(20,20,15,.10);
@@ -97,6 +97,12 @@
     position:relative;
   }
   ::selection{ background:var(--accent); color:var(--accent-text); }
+
+  a:focus-visible, button:focus-visible, .rg-cell:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 
   body::before{
     content:"";
