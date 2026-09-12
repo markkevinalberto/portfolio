@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: r('./index.html'),
         certificates: r('./certificates.html'),
+        resume: r('./resume.html'),
       },
     },
   },

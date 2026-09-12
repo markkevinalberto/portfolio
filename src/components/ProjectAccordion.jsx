@@ -72,7 +72,7 @@ function CardMedia({ p, isActive, mobile }) {
         mobile
           ? "h-44 w-full object-cover object-top"
           : `absolute inset-0 h-full w-full object-cover object-top transition-all duration-700 ${
-              isActive ? "scale-100 opacity-35" : "scale-110 opacity-0"
+              isActive ? "scale-100 opacity-90" : "scale-110 opacity-0"
             }`
       }
     />
@@ -100,7 +100,7 @@ function DesktopAccordion() {
             style={{ minWidth: isActive ? undefined : 52 }}
           >
             <CardMedia p={p} isActive={isActive} />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/70 to-ink-950/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink-950/95 via-ink-950/25 to-transparent" />
 
             {!isActive && (
               <div className="absolute inset-0 flex items-center justify-center">
