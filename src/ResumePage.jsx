@@ -12,6 +12,7 @@ import {
   Briefcase,
   GraduationCap,
   Certificate,
+  Trophy,
 } from "@phosphor-icons/react";
 import Nav from "./components/Nav";
 import profilePhoto from "./assets/profile-photo.jpg";
@@ -167,10 +168,27 @@ export default function ResumePage() {
           <Timeline>
             {experience.map((job) => (
               <div key={job.org} className="timeline-item relative mb-10 last:mb-0">
-                <div className="absolute -left-9 top-1 h-4 w-4 rounded-full border-2 border-paper-50 bg-amber" />
-                <div className="rounded-2xl border border-ink-950/10 bg-white p-6 shadow-[0_2px_12px_rgba(20,20,15,0.04)]">
+                <div
+                  className={`absolute -left-9 top-1 h-4 w-4 rounded-full border-2 border-paper-50 ${
+                    job.featured ? "bg-amber-deep" : "bg-amber"
+                  }`}
+                />
+                <div
+                  className={`rounded-2xl p-6 ${
+                    job.featured
+                      ? "border-2 border-amber bg-white shadow-[0_8px_28px_-6px_rgba(242,166,61,0.35)]"
+                      : "border border-ink-950/10 bg-white shadow-[0_2px_12px_rgba(20,20,15,0.04)]"
+                  }`}
+                >
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                    <h3 className="text-lg font-bold">{job.org}</h3>
+                    <div className="flex items-center gap-2.5">
+                      <h3 className="text-lg font-bold">{job.org}</h3>
+                      {job.featured && (
+                        <span className="rounded-full bg-amber px-2.5 py-0.5 font-mono-label text-[10px] font-medium uppercase tracking-wide text-ink-950">
+                          Current
+                        </span>
+                      )}
+                    </div>
                     <span className="font-mono-label text-xs text-ink-950/45">{job.period}</span>
                   </div>
                   <p className="mt-1 text-sm text-amber-deep">{job.roles}</p>
@@ -179,14 +197,45 @@ export default function ResumePage() {
                       {job.location}
                     </p>
                   )}
-                  <ul className="mt-3 flex flex-col gap-1.5">
-                    {job.highlights.map((h) => (
-                      <li key={h} className="flex gap-2 text-sm text-ink-950/70">
-                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink-950/30" />
-                        {h}
-                      </li>
-                    ))}
-                  </ul>
+
+                  {job.roleDetails ? (
+                    <div className="mt-4 flex flex-col gap-3">
+                      {job.roleDetails.map((r) => (
+                        <div key={r.role}>
+                          <p className="text-sm font-bold text-ink-950">{r.role}</p>
+                          <p className="mt-0.5 text-sm text-ink-950/70">{r.desc}</p>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <ul className="mt-3 flex flex-col gap-1.5">
+                      {job.highlights.map((h) => (
+                        <li key={h} className="flex gap-2 text-sm text-ink-950/70">
+                          <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink-950/30" />
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {job.achievements && (
+                    <div className="mt-5 rounded-xl bg-amber/10 p-4">
+                      <div className="flex items-center gap-2">
+                        <Trophy size={16} weight="fill" className="text-amber-deep" />
+                        <h4 className="font-mono-label text-xs font-semibold uppercase tracking-wide text-amber-deep">
+                          Key Achievements
+                        </h4>
+                      </div>
+                      <ul className="mt-2.5 flex flex-col gap-2">
+                        {job.achievements.map((a) => (
+                          <li key={a} className="flex gap-2 text-sm text-ink-950/75">
+                            <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-amber-deep" />
+                            {a}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

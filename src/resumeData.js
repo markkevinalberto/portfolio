@@ -52,13 +52,44 @@ export const skillGroups = [
 export const experience = [
   {
     org: "Jesus Christ Saves Global Outreach (JCSGO)",
-    roles: "Web Designer, Multimedia Director, Chief of Staff, Senior Pastor's Secretary, Admin Staff, Camera Operator & Photographer, Dream Campsite Manager",
+    roles: "Web Designer, Admin Staff, Senior Pastor's Secretary, Camera Operator & Photographer, Multimedia Director, Chief of Staff, Dream Campsite Manager",
     period: "2015-Present",
-    highlights: [
-      "Maintained and enhanced the church's website and social media platforms, later rebuilding it as a headless Astro site.",
-      "Led the media team: camera operators, livestream production, and LED operators for large-scale services and events.",
-      "Provided executive support to the Senior Pastor, managing schedules, event planning, and coordination with national pastors.",
-      "Directed staff operations as Chief of Staff, and oversaw all Dream Campsite bookings, staffing, and marketing.",
+    featured: true,
+    roleDetails: [
+      {
+        role: "Web Designer",
+        desc: "Maintained and enhanced the church's website and social media platforms, creating visually appealing, functional digital content that strengthened the organization's online presence and engagement. Later rebuilt it as a headless Astro site.",
+      },
+      {
+        role: "Administrative Staff",
+        desc: "Oversaw the administrative office and coordinated church events, assisting pastors in preparing presentations for smooth, professional delivery of Sunday sermons and special programs.",
+      },
+      {
+        role: "Senior Pastor's Secretary",
+        desc: "Provided executive support to Bishop Vicky Sebastian, managing schedules, event planning, and reminders, and coordinated with national pastors so their pastoral and logistical needs were fully supported.",
+      },
+      {
+        role: "Camera Operator & Photographer",
+        desc: "Captured live events, sermons, and church activities with precision and creativity, producing high-quality photos and videos used for promotion, documentation, and digital media content.",
+      },
+      {
+        role: "Multimedia Director",
+        desc: "Led the media team, supervising camera operators, livestream production, LED operators, and creative personnel. Managed all media equipment and technical operations for large-scale services and events.",
+      },
+      {
+        role: "Chief of Staff",
+        desc: "Directed staff operations for JCSGO, coordinating workloads, confirming schedules, and managing leave requests as the primary liaison for organizational efficiency and alignment with leadership objectives.",
+      },
+      {
+        role: "Dream Campsite Manager",
+        desc: "Oversaw all aspects of camp operations: client bookings, staff supervision, marketing initiatives, promotions, and facility management, keeping the site safe, organized, and welcoming.",
+      },
+    ],
+    achievements: [
+      "Successfully coordinated multi-site church events and national pastor engagements with precision and efficiency.",
+      "Strengthened JCSGO's digital and multimedia presence, significantly enhancing audience reach and engagement.",
+      "Streamlined organizational operations as Chief of Staff, improving staff productivity and workflow management.",
+      "Elevated Dream Campsite's profile and operational effectiveness through strategic marketing, staff leadership, and hands-on facility management.",
     ],
   },
   {
