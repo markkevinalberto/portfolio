@@ -77,7 +77,7 @@ function SkillsAccordion() {
             </h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {g.skills.map((s) => (
-                <span key={s} className="rounded-lg bg-paper-100 px-3 py-2 text-sm text-ink-950/75">
+                <span key={s} className="rounded-lg bg-paper-100 px-4 py-3 text-base text-ink-950/75">
                   {s}
                 </span>
               ))}
@@ -117,7 +117,7 @@ function SkillSlice({ group, defaultActive }) {
           </h3>
           <div className="mt-4 flex flex-col gap-2">
             {group.skills.map((s) => (
-              <span key={s} className="rounded-lg bg-paper-100 px-3 py-2.5 text-sm text-ink-950/75">
+              <span key={s} className="rounded-lg bg-paper-100 px-4 py-3 text-base text-ink-950/75">
                 {s}
               </span>
             ))}
@@ -238,7 +238,7 @@ export default function ResumePage() {
           <img
             src={profilePhoto}
             alt="Mark Kevin Alberto"
-            className="hero-in h-36 w-36 shrink-0 rounded-2xl border-4 border-white object-cover shadow-[0_20px_40px_-12px_rgba(20,20,15,0.25)] md:h-44 md:w-44"
+            className="hero-in h-44 w-44 shrink-0 rounded-2xl border-4 border-white object-cover shadow-[0_20px_40px_-12px_rgba(20,20,15,0.25)] md:h-60 md:w-60"
           />
           <div className="flex-1">
             <p className="hero-in font-mono-label text-xs uppercase tracking-wide text-amber-deep">
