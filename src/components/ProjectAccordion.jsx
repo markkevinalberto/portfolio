@@ -14,7 +14,7 @@ function ProjectDetails({ p }) {
         {p.chips.map((c) => (
           <span
             key={c}
-            className="rounded-full border border-white/15 px-3 py-1 font-mono-label text-[11px] text-white/60"
+            className="rounded-full border border-white/15 px-3 py-1 font-mono-label text-xs text-white/75"
           >
             {c}
           </span>
@@ -32,7 +32,7 @@ function ProjectDetails({ p }) {
           <ArrowUpRight size={13} weight="bold" />
         </a>
       ) : p.type === "code" ? (
-        <span className="mt-5 inline-block font-mono-label text-xs text-white/35">
+        <span className="mt-5 inline-block font-mono-label text-xs text-white/55">
           Bound to a private spreadsheet, no public link
         </span>
       ) : null}
@@ -48,14 +48,14 @@ function CardMedia({ p, isActive, mobile }) {
           mobile ? "" : isActive ? "opacity-100" : "opacity-70"
         }`}
       >
-        <div className="mb-2 flex items-center gap-2 text-white/30">
+        <div className="mb-2 flex items-center gap-2 text-white/50">
           <FileCode size={14} weight="bold" />
-          <span className="font-mono-label text-[10px] uppercase tracking-wide">
+          <span className="font-mono-label text-xs uppercase tracking-wide">
             Apps Script project
           </span>
         </div>
         {p.files.map((f) => (
-          <span key={f} className="font-mono-label text-sm text-white/45">
+          <span key={f} className="font-mono-label text-sm text-white/65">
             {f}
           </span>
         ))}
@@ -104,7 +104,7 @@ function DesktopAccordion() {
 
             {!isActive && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-mono-label text-xs font-medium tracking-wide text-white/50 [writing-mode:vertical-rl] group-hover:text-white">
+                <span className="font-mono-label text-xs font-medium tracking-wide text-white/70 [writing-mode:vertical-rl] group-hover:text-white">
                   {p.title}
                 </span>
               </div>

@@ -58,7 +58,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="hero-sub mt-8 max-w-xl text-lg text-white/60">
+        <p className="hero-sub mt-8 max-w-xl text-lg text-white/75">
           I&rsquo;m Kevin, JCSGO&rsquo;s multimedia director. Next.js, Astro, Kotlin, Apps
           Script, whatever a problem actually needs.
         </p>
@@ -85,7 +85,7 @@ export default function Hero() {
           <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-          <span className="ml-2 font-mono-label text-[10px] text-white/40">
+          <span className="ml-2 font-mono-label text-xs text-white/60">
             jcsgo-room-booking.vercel.app
           </span>
         </div>

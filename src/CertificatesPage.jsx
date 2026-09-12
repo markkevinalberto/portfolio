@@ -31,7 +31,7 @@ function CertCard({ item }) {
       </a>
       <div className="flex flex-1 flex-col gap-1.5 p-4">
         <h4 className="text-sm font-bold leading-snug text-white">{item.title}</h4>
-        {item.sub && <p className="font-mono-label text-[11px] text-white/40">{item.sub}</p>}
+        {item.sub && <p className="font-mono-label text-xs text-white/60">{item.sub}</p>}
       </div>
     </div>
   );
@@ -51,7 +51,7 @@ export default function CertificatesPage() {
           <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-black leading-[1.05] tracking-tight text-white">
             Certificates and training.
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/60">
+          <p className="mt-6 max-w-xl text-lg text-white/75">
             {certificateCount}, from a TESDA hardware certification in 2012 to a Christian
             Educators' Network convention this September. Click any certificate to open it full
             size.
@@ -69,7 +69,7 @@ export default function CertificatesPage() {
                 <div>
                   <h2 className="text-xl font-bold text-white">{group.title}</h2>
                   {group.meta && (
-                    <p className="mt-1 font-mono-label text-xs text-white/40">{group.meta}</p>
+                    <p className="mt-1 font-mono-label text-xs text-white/60">{group.meta}</p>
                   )}
                 </div>
               </div>

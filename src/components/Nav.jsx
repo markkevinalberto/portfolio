@@ -12,7 +12,7 @@ export default function Nav() {
           </span>
           <span className="hidden text-sm font-medium text-white sm:inline">Mark Kevin Alberto</span>
         </a>
-        <div className="hidden items-center gap-4 font-mono-label text-xs text-white/60 md:flex">
+        <div className="hidden items-center gap-4 font-mono-label text-xs text-white/80 md:flex">
           <a href={`${home}#work`} className="transition hover:text-white">Work</a>
           <a href={`${home}#stack`} className="transition hover:text-white">Stack</a>
           <a href={`${home}certificates.html`} className="transition hover:text-white">Certificates</a>

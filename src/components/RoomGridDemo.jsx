@@ -43,7 +43,7 @@ export default function RoomGridDemo() {
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap gap-5 font-mono-label text-xs text-white/55">
+      <div className="mb-4 flex flex-wrap gap-5 font-mono-label text-sm text-white/75">
         <span className="flex items-center gap-1.5">
           <span className="h-2.5 w-2.5 rounded-sm bg-ok" /> Open
         </span>
@@ -58,14 +58,14 @@ export default function RoomGridDemo() {
       <div className="grid grid-cols-[70px_repeat(6,1fr)] gap-1.5 rounded-md border border-white/10 bg-ink-900 p-3">
         <div />
         {hours.map((h) => (
-          <div key={h} className="text-center font-mono-label text-[11px] text-white/35">
+          <div key={h} className="text-center font-mono-label text-xs text-white/60">
             {h}
           </div>
         ))}
 
         {roomGridRooms.map((room, r) => (
           <Fragment key={room}>
-            <div className="flex items-center px-1 font-mono-label text-[11px] text-white/35">
+            <div className="flex items-center px-1 font-mono-label text-xs text-white/60">
               {room}
             </div>
             {cells.slice(r * 6, r * 6 + 6).map((cell) => {
@@ -92,7 +92,7 @@ export default function RoomGridDemo() {
 
       <p
         className={`mt-3 min-h-[20px] font-mono-label text-sm ${
-          message.tone === "danger" ? "text-danger" : message.tone === "ok" ? "text-ok" : "text-white/55"
+          message.tone === "danger" ? "text-danger" : message.tone === "ok" ? "text-ok" : "text-white/75"
         }`}
       >
         {message.text}

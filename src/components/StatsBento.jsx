@@ -24,7 +24,7 @@ export default function StatsBento() {
           >
             {s.num}
           </span>
-          <span className={`mt-2 text-white/55 ${i === 0 ? "max-w-[16ch] text-base" : "text-xs"}`}>
+          <span className={`mt-2 text-white/70 ${i === 0 ? "max-w-[16ch] text-lg" : "text-sm"}`}>
             {s.label}
           </span>
         </div>

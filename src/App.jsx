@@ -17,7 +17,7 @@ export default function App() {
           <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold text-white">
             Nine systems, mostly one church.
           </h2>
-          <p className="mt-3 max-w-xl text-white/55">
+          <p className="mt-3 max-w-xl text-white/70">
             Most of these are for Jesus Christ Saves Global Outreach (JCSGO), a church running
             services, rentals, and events across five buildings. A couple started as classroom
             tools, then stuck around.
@@ -38,7 +38,7 @@ export default function App() {
           <h2 className="text-[clamp(1.5rem,3vw,2.1rem)] font-bold text-white">
             What&rsquo;s actually running underneath.
           </h2>
-          <p className="mt-3 text-white/55">
+          <p className="mt-3 text-white/70">
             Backed by{" "}
             <a
               href={`${import.meta.env.BASE_URL}certificates.html`}

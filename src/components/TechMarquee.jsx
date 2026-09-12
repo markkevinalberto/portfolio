@@ -11,7 +11,7 @@ export default function TechMarquee() {
         {items.map((t, i) => (
           <span
             key={i}
-            className="font-mono-label text-sm uppercase tracking-wide text-white/35"
+            className="font-mono-label text-sm uppercase tracking-wide text-white/55"
           >
             {t}
           </span>

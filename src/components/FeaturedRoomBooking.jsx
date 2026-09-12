@@ -89,7 +89,7 @@ export default function FeaturedRoomBooking() {
             <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
             <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
             <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-            <span className="ml-2 font-mono-label text-[10px] text-white/40">
+            <span className="ml-2 font-mono-label text-xs text-white/60">
               jcsgo-room-booking.vercel.app
             </span>
           </div>
@@ -106,7 +106,7 @@ export default function FeaturedRoomBooking() {
             Featured &middot; Booking platform
           </span>
           <h3 className="mt-3 text-3xl font-bold text-white">JCSGO Central Request Portal</h3>
-          <p className="mt-4 text-white/60">
+          <p className="mt-4 text-white/75">
             A Next.js 16 app for reserving any of JCSGO&rsquo;s 40 rooms across 5 buildings, no
             login required to send a request. Every request gets checked against a Postgres
             constraint that makes double-booking impossible, not just discouraged.
@@ -115,7 +115,7 @@ export default function FeaturedRoomBooking() {
             {["Next.js 16", "Prisma", "PostgreSQL", "JWT auth", "Capacitor / Android"].map((c) => (
               <span
                 key={c}
-                className="rounded-full border border-white/15 px-3 py-1 font-mono-label text-[11px] text-white/60"
+                className="rounded-full border border-white/15 px-3 py-1 font-mono-label text-xs text-white/75"
               >
                 {c}
               </span>
@@ -131,16 +131,16 @@ export default function FeaturedRoomBooking() {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-5 font-mono-label text-xs text-white/40">
+          <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-5 font-mono-label text-xs text-white/60">
             <span>
               Constraint:{" "}
-              <span className="text-white/55">EXCLUDE USING gist (room_id WITH =, during WITH &amp;&amp;)</span>
+              <span className="text-white/75">EXCLUDE USING gist (room_id WITH =, during WITH &amp;&amp;)</span>
             </span>
             <a
               href="https://jcsgo-room-booking.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/55 transition hover:text-amber"
+              className="text-white/75 transition hover:text-amber"
             >
               Open the request portal
             </a>

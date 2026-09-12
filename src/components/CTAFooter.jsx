@@ -12,7 +12,7 @@ export default function CTAFooter() {
           <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-black leading-tight text-white">
             Building something a real organization needs to run on?
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-white/55">
+          <p className="mx-auto mt-5 max-w-xl text-white/70">
             Based in Quezon City, Philippines. Multimedia director at JCSGO by title, the person
             who ends up building its software by necessity.
           </p>
@@ -40,8 +40,8 @@ export default function CTAFooter() {
 
       <footer className="border-t border-white/10 px-4 py-7">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3">
-          <span className="font-mono-label text-xs text-white/35">Mark Kevin Alberto, 2026</span>
-          <div className="flex gap-5 font-mono-label text-xs text-white/35">
+          <span className="font-mono-label text-xs text-white/55">Mark Kevin Alberto, 2026</span>
+          <div className="flex gap-5 font-mono-label text-xs text-white/55">
             <a href="mailto:mark.kevin.alberto@jcsgo.org" className="transition hover:text-amber">
               Email
             </a>
