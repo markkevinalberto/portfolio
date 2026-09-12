@@ -38,6 +38,16 @@ export default function App() {
           <h2 className="text-[clamp(1.5rem,3vw,2.1rem)] font-bold text-white">
             What&rsquo;s actually running underneath.
           </h2>
+          <p className="mt-3 text-white/55">
+            Backed by{" "}
+            <a
+              href={`${import.meta.env.BASE_URL}certificates.html`}
+              className="border-b border-white/30 text-white transition hover:border-amber hover:text-amber"
+            >
+              nine certificates
+            </a>
+            , from a 2012 TESDA hardware cert to a 2025 Google AI course.
+          </p>
         </div>
         <TechMarquee />
       </section>
