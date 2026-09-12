@@ -13,6 +13,8 @@ export default function App() {
       <Nav />
       <Hero />
 
+      <ResumePreview />
+
       <section id="work" className="py-8 md:py-16">
         <div className="mx-auto max-w-5xl px-4 pb-12">
           <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold text-white">
@@ -53,8 +55,6 @@ export default function App() {
         </div>
         <TechMarquee />
       </section>
-
-      <ResumePreview />
 
       <CTAFooter />
     </main>
