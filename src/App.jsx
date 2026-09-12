@@ -4,6 +4,7 @@ import StatsBento from "./components/StatsBento";
 import ProjectAccordion from "./components/ProjectAccordion";
 import FeaturedRoomBooking from "./components/FeaturedRoomBooking";
 import TechMarquee from "./components/TechMarquee";
+import ResumePreview from "./components/ResumePreview";
 import CTAFooter from "./components/CTAFooter";
 
 export default function App() {
@@ -52,6 +53,8 @@ export default function App() {
         </div>
         <TechMarquee />
       </section>
+
+      <ResumePreview />
 
       <CTAFooter />
     </main>
