@@ -52,7 +52,7 @@ function StatsBento() {
           >
             {s.num}
           </span>
-          <span className={`mt-2 text-ink-950/55 ${i === 0 ? "max-w-[18ch] text-base" : "text-xs"}`}>
+          <span className={`mt-2 text-ink-950/60 ${i === 0 ? "max-w-[18ch] text-lg" : "text-sm"}`}>
             {s.label}
           </span>
         </div>
@@ -234,57 +234,59 @@ export default function ResumePage() {
           aria-hidden
           className="pointer-events-none absolute -top-32 left-1/2 h-[480px] w-[780px] -translate-x-1/2 rounded-full bg-amber/15 blur-[130px]"
         />
-        <div className="relative mx-auto max-w-3xl text-center">
+        <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-8 text-center md:flex-row md:items-end md:text-left">
           <img
             src={profilePhoto}
             alt="Mark Kevin Alberto"
-            className="hero-in mx-auto h-28 w-28 rounded-full border-4 border-white object-cover shadow-[0_20px_40px_-12px_rgba(20,20,15,0.25)] md:h-32 md:w-32"
+            className="hero-in h-36 w-36 shrink-0 rounded-2xl border-4 border-white object-cover shadow-[0_20px_40px_-12px_rgba(20,20,15,0.25)] md:h-44 md:w-44"
           />
-          <p className="hero-in mt-6 font-mono-label text-xs uppercase tracking-wide text-amber-deep">
-            {titles.join(" · ")}
-          </p>
-          <h1 className="hero-in mt-3 text-[clamp(2.25rem,6vw,4rem)] font-black leading-[1.05] tracking-tight">
-            Mark Kevin Alberto
-          </h1>
-          <p className="hero-in mx-auto mt-5 max-w-xl text-ink-950/65">{profile}</p>
+          <div className="flex-1">
+            <p className="hero-in font-mono-label text-xs uppercase tracking-wide text-amber-deep">
+              {titles.join(" · ")}
+            </p>
+            <h1 className="hero-in mt-2 text-[clamp(2rem,5vw,3.25rem)] font-black leading-tight tracking-tight">
+              Mark Kevin Alberto
+            </h1>
+            <p className="hero-in mx-auto mt-4 max-w-xl text-ink-950/65 md:mx-0">{profile}</p>
 
-          <div className="hero-in mt-7 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-mono-label text-xs text-ink-950/55">
-            <span className="flex items-center gap-1.5">
-              <Phone size={13} weight="bold" /> {contact.phone}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <EnvelopeSimple size={13} weight="bold" /> {contact.email}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <MapPin size={13} weight="bold" /> {contact.address}
-            </span>
-            <a
-              href={`https://${contact.facebook}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 transition hover:text-amber-deep"
-            >
-              <FacebookLogo size={13} weight="bold" /> {contact.facebook}
-            </a>
-          </div>
+            <div className="hero-in mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-mono-label text-xs text-ink-950/55 md:justify-start">
+              <span className="flex items-center gap-1.5">
+                <Phone size={13} weight="bold" /> {contact.phone}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <EnvelopeSimple size={13} weight="bold" /> {contact.email}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <MapPin size={13} weight="bold" /> {contact.address}
+              </span>
+              <a
+                href={`https://${contact.facebook}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 transition hover:text-amber-deep"
+              >
+                <FacebookLogo size={13} weight="bold" /> {contact.facebook}
+              </a>
+            </div>
 
-          <div className="hero-in mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href={`${home}resume.pdf`}
-              target="_blank"
-              rel="noopener"
-              className="flex items-center gap-2 rounded-full bg-ink-950 px-6 py-3 font-mono-label text-sm font-medium text-white transition hover:-translate-y-0.5 hover:shadow-lg"
-            >
-              <DownloadSimple size={15} weight="bold" />
-              Download PDF
-            </a>
-            <a
-              href={`${home}`}
-              className="flex items-center gap-2 rounded-full border border-ink-950/15 px-6 py-3 font-mono-label text-sm font-medium text-ink-950 transition hover:border-amber-deep hover:text-amber-deep"
-            >
-              <ArrowLeft size={15} weight="bold" />
-              Back to portfolio
-            </a>
+            <div className="hero-in mt-7 flex flex-wrap items-center justify-center gap-3 md:justify-start">
+              <a
+                href={`${home}resume.pdf`}
+                target="_blank"
+                rel="noopener"
+                className="flex items-center gap-2 rounded-full bg-ink-950 px-6 py-3 font-mono-label text-sm font-medium text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                <DownloadSimple size={15} weight="bold" />
+                Download PDF
+              </a>
+              <a
+                href={`${home}`}
+                className="flex items-center gap-2 rounded-full border border-ink-950/15 px-6 py-3 font-mono-label text-sm font-medium text-ink-950 transition hover:border-amber-deep hover:text-amber-deep"
+              >
+                <ArrowLeft size={15} weight="bold" />
+                Back to portfolio
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -420,12 +422,12 @@ export default function ResumePage() {
                 className="edu-card sticky mb-6 last:mb-0"
                 style={{ top: `${96 + i * 14}px`, zIndex: i + 1 }}
               >
-                <div className="edu-card-inner rounded-2xl border border-ink-950/10 bg-white p-6 shadow-[0_8px_24px_-8px_rgba(20,20,15,0.12)]">
+                <div className="edu-card-inner rounded-2xl border border-ink-950/10 bg-white p-7 shadow-[0_8px_24px_-8px_rgba(20,20,15,0.12)]">
                   <div className="flex items-baseline justify-between gap-3">
-                    <h3 className="font-bold">{e.school}</h3>
-                    <span className="font-mono-label text-xs text-ink-950/45">{e.period}</span>
+                    <h3 className="text-xl font-bold">{e.school}</h3>
+                    <span className="font-mono-label text-sm text-ink-950/50">{e.period}</span>
                   </div>
-                  <p className="mt-1 text-sm text-ink-950/65">{e.program}</p>
+                  <p className="mt-2 text-base text-ink-950/70">{e.program}</p>
                 </div>
               </div>
             ))}
