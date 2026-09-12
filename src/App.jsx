@@ -44,9 +44,10 @@ export default function App() {
               href={`${import.meta.env.BASE_URL}certificates.html`}
               className="border-b border-white/30 text-white transition hover:border-amber hover:text-amber"
             >
-              nine certificates
+              21 certificates
             </a>
-            , from a 2012 TESDA hardware cert to a 2025 Google AI course.
+            , from a 2012 TESDA hardware cert to two cybersecurity summits and a national
+            convention this year.
           </p>
         </div>
         <TechMarquee />
