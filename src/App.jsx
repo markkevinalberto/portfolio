@@ -15,7 +15,7 @@ export default function App() {
       <section id="work" className="py-8 md:py-16">
         <div className="mx-auto max-w-5xl px-4 pb-12">
           <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold text-white">
-            Eight systems, mostly one church.
+            Nine systems, mostly one church.
           </h2>
           <p className="mt-3 max-w-xl text-white/55">
             Most of these are for Jesus Christ Saves Global Outreach (JCSGO), a church running

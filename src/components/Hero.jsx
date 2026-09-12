@@ -53,7 +53,7 @@ export default function Hero() {
           </span>
           <span className="block overflow-hidden">
             <span className="hero-line block text-[clamp(2.75rem,7vw,5rem)] font-black leading-[1.02] tracking-tight text-amber">
-              Eight shipped. All real.
+              Nine shipped. All real.
             </span>
           </span>
         </h1>

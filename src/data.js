@@ -5,9 +5,10 @@ import declareImg from "./assets/declare.png";
 import rentalImg from "./assets/rental.png";
 import akeriusImg from "./assets/akeriussms.jpg";
 import qrGeneratorImg from "./assets/qr-generator.jpg";
+import dreamCampsiteImg from "./assets/dreamcampsite.jpg";
 
 export const stats = [
-  { num: "8", label: "public systems shipped", big: true },
+  { num: "9", label: "public systems shipped", big: true },
   { num: "5", label: "church buildings covered" },
   { num: "40", label: "bookable rooms tracked" },
   { num: "1", label: "Postgres constraint, zero conflicts" },
@@ -36,6 +37,16 @@ export const projects = [
       "An Astro frontend pulling content from a WordPress backend over the REST API. Deploys itself via GitHub Actions to Hostinger.",
     chips: ["Astro", "WordPress REST API", "GitHub Actions"],
     link: "https://jcsgo.org",
+  },
+  {
+    id: "dream-campsite",
+    kicker: "Camp & retreat site",
+    title: "Dream Campsite",
+    image: dreamCampsiteImg,
+    description:
+      "The page for JCSGO's youth camp and retreat facility in Trece Martires, Cavite. Part of jcsgo.org, run day to day by the same person who manages the bookings.",
+    chips: ["Astro", "WordPress REST API"],
+    link: "https://jcsgo.org/dreamcampsite/",
   },
   {
     id: "seed-dome",

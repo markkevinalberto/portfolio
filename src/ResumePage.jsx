@@ -23,43 +23,12 @@ import {
   skillGroups,
   experience,
   education,
-  stats,
 } from "./resumeData";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const home = import.meta.env.BASE_URL;
 const allSkills = skillGroups.flatMap((g) => g.skills);
-
-function StatsBento() {
-  const spans = [
-    "col-span-2 row-span-2 justify-between",
-    "col-span-2 row-span-1",
-    "col-span-1 row-span-1",
-    "col-span-1 row-span-1",
-  ];
-  return (
-    <div className="mx-auto grid max-w-4xl auto-rows-[minmax(96px,auto)] grid-cols-4 grid-flow-dense gap-3 px-4">
-      {stats.map((s, i) => (
-        <div
-          key={s.label}
-          className={`flex flex-col rounded-2xl border border-ink-950/10 bg-white p-6 shadow-[0_2px_12px_rgba(20,20,15,0.04)] ${spans[i]}`}
-        >
-          <span
-            className={`font-mono-label font-semibold text-amber-deep tabular-nums ${
-              i === 0 ? "text-5xl md:text-6xl" : "text-3xl"
-            }`}
-          >
-            {s.num}
-          </span>
-          <span className={`mt-2 text-ink-950/60 ${i === 0 ? "max-w-[18ch] text-lg" : "text-sm"}`}>
-            {s.label}
-          </span>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 function SkillsAccordion() {
   return (
@@ -289,10 +258,6 @@ export default function ResumePage() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="py-8 md:py-10">
-        <StatsBento />
       </section>
 
       <section className="px-4 py-14 md:py-20">
