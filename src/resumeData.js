@@ -158,3 +158,10 @@ export const education = [
     period: "2000-2005",
   },
 ];
+
+export const stats = [
+  { num: "7", label: "roles held at one organization", big: true },
+  { num: "17", label: "years working, since 2009" },
+  { num: "21", label: "certificates earned" },
+  { num: "5", label: "organizations worked with" },
+];
