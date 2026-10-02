@@ -261,6 +261,12 @@ export default function ResumePage() {
         </div>
       </section>
 
+      <section className="px-4 pt-6 pb-0 md:pt-8">
+        <div className="mx-auto max-w-4xl">
+          <VerifiedBadges theme="light" />
+        </div>
+      </section>
+
       <section className="px-4 py-14 md:py-20">
         <p className="mx-auto max-w-2xl text-center text-2xl font-medium leading-snug text-ink-950/80 md:text-3xl">
           Built by
@@ -412,12 +418,6 @@ export default function ResumePage() {
           ))}
         </div>
       </div>
-
-      <section className="px-4 pt-14 md:pt-20">
-        <div className="mx-auto max-w-4xl">
-          <VerifiedBadges theme="light" />
-        </div>
-      </section>
 
       <section className="px-4 py-14 md:py-20">
         <div className="mx-auto flex max-w-4xl flex-col items-start gap-5 rounded-2xl border border-ink-950/10 bg-white p-8 shadow-[0_2px_12px_rgba(20,20,15,0.04)] sm:flex-row sm:items-center sm:justify-between">
