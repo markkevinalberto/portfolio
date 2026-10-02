@@ -5,6 +5,7 @@ import ProjectAccordion from "./components/ProjectAccordion";
 import FeaturedRoomBooking from "./components/FeaturedRoomBooking";
 import TechMarquee from "./components/TechMarquee";
 import ResumePreview from "./components/ResumePreview";
+import VerifiedBadges from "./components/VerifiedBadges";
 import CTAFooter from "./components/CTAFooter";
 
 export default function App() {
@@ -54,6 +55,9 @@ export default function App() {
           </p>
         </div>
         <TechMarquee />
+        <div className="mx-auto mt-14 max-w-5xl px-4">
+          <VerifiedBadges />
+        </div>
       </section>
 
       <CTAFooter />

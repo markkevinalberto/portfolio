@@ -15,6 +15,7 @@ import {
   Trophy,
 } from "@phosphor-icons/react";
 import Nav from "./components/Nav";
+import VerifiedBadges from "./components/VerifiedBadges";
 import profilePhoto from "./assets/profile-photo.jpg";
 import {
   profile,
@@ -411,6 +412,12 @@ export default function ResumePage() {
           ))}
         </div>
       </div>
+
+      <section className="px-4 pt-14 md:pt-20">
+        <div className="mx-auto max-w-4xl">
+          <VerifiedBadges theme="light" />
+        </div>
+      </section>
 
       <section className="px-4 py-14 md:py-20">
         <div className="mx-auto flex max-w-4xl flex-col items-start gap-5 rounded-2xl border border-ink-950/10 bg-white p-8 shadow-[0_2px_12px_rgba(20,20,15,0.04)] sm:flex-row sm:items-center sm:justify-between">
