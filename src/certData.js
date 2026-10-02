@@ -6,6 +6,8 @@ import tesda from "./assets/certs/tesda.jpg";
 import drone from "./assets/certs/drone.jpg";
 import jcsgoAppreciation from "./assets/certs/jcsgo-appreciation.jpg";
 import cednetConvention from "./assets/certs/cednet-convention.jpg";
+import ciscoIntroCybersecurity from "./assets/certs/cisco-intro-cybersecurity.jpg";
+import ciscoCyberThreatManagement from "./assets/certs/cisco-cyber-threat-management.jpg";
 
 import wthSummit from "./assets/certs/wth-summit.jpg";
 import wthEthicalHacking from "./assets/certs/wth-ethical-hacking.jpg";
@@ -68,6 +70,16 @@ export const certGroups = [
         title: "6th National Convention, Championing Godliness 2.0",
         sub: "Christian Educators' Network International · September 2026",
         image: cednetConvention,
+      },
+      {
+        title: "Introduction to Cybersecurity",
+        sub: "Cisco Networking Academy · issued October 2026 · verified on Credly",
+        image: ciscoIntroCybersecurity,
+      },
+      {
+        title: "Cyber Threat Management",
+        sub: "Cisco Networking Academy · issued October 2026 · verified on Credly",
+        image: ciscoCyberThreatManagement,
       },
     ],
   },
