@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background: #08090c;
-  color: #eceef0;
+  background: #fdf8f5;
+  color: #170d0a;
   font-family: "Satoshi", system-ui, sans-serif;
   overflow-x: hidden;
   width: 100%;
@@ -16,19 +16,52 @@ body {
 }
 
 ::selection {
-  background: #f2a63d;
-  color: #1a1206;
+  background: #d4291d;
+  color: #fdf8f5;
 }
 
 .font-mono-label {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
 }
 
+.font-serif {
+  font-variation-settings: "SOFT" 100, "WONK" 0;
+}
+
+.font-serif.italic,
+.font-serif .italic {
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+}
+
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #f2a63d;
+  outline: 2px solid #d4291d;
   outline-offset: 3px;
   border-radius: 2px;
+}
+
+@layer components {
+  .wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 72rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding-left: 3.75rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .bg-dots {
+    background-color: #fdf8f5;
+    background-image: radial-gradient(rgba(212, 41, 29, 0.14) 1px, transparent 1.3px);
+    background-size: 22px 22px;
+  }
 }
 
 @keyframes marquee {
@@ -42,6 +75,16 @@ button:focus-visible {
   40% { transform: translateX(4px); }
   60% { transform: translateX(-3px); }
   80% { transform: translateX(3px); }
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

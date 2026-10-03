@@ -7,24 +7,80 @@ import akeriusImg from "./assets/akeriussms.jpg";
 import qrGeneratorImg from "./assets/qr-generator.jpg";
 import dreamCampsiteImg from "./assets/dreamcampsite.jpg";
 
-export const stats = [
-  { num: "9", label: "public systems shipped", big: true },
-  { num: "5", label: "church buildings covered" },
-  { num: "40", label: "bookable rooms tracked" },
+export const flagshipStats = [
+  { num: "40", label: "bookable rooms" },
+  { num: "5", label: "church buildings" },
   { num: "1", label: "Postgres constraint, zero conflicts" },
 ];
 
-export const techStack = [
-  "Astro",
-  "Next.js 16",
-  "Prisma",
-  "PostgreSQL",
-  "Tailwind CSS",
-  "GitHub Actions",
-  "Capacitor",
-  "Kotlin",
-  "JWT Auth",
-  "WordPress REST API",
+export const marqueeItems = [
+  { text: "git push origin main", style: "mono" },
+  { text: "Websites", style: "serif" },
+  { text: "npm run build", style: "mono" },
+  { text: "Web apps", style: "serif" },
+  { text: "EXCLUDE USING gist", style: "mono" },
+  { text: "Android", style: "serif" },
+  { text: "onOpen()", style: "mono" },
+  { text: "Automations", style: "serif" },
+  { text: "Astro", style: "mono" },
+  { text: "Livestreams", style: "serif" },
+  { text: "Next.js", style: "mono" },
+  { text: "Kotlin", style: "mono" },
+  { text: "PostgreSQL", style: "mono" },
+  { text: "Apps Script", style: "mono" },
+  { text: "Ship it", style: "serif" },
+];
+
+export const services = [
+  {
+    title: "Websites",
+    lines: ["Headless sites that publish themselves.", "Content in WordPress, pages in Astro."],
+    tags: ["Astro", "WordPress REST", "GitHub Actions"],
+  },
+  {
+    title: "Web apps",
+    lines: ["Booking, scheduling, and rentals.", "Rules enforced in the database."],
+    tags: ["Next.js", "Prisma", "PostgreSQL"],
+  },
+  {
+    title: "Android & automation",
+    lines: ["SMS gateways and spreadsheet tools.", "The glue between the other apps."],
+    tags: ["Kotlin", "Android", "Apps Script"],
+  },
+  {
+    title: "Media & AV systems",
+    lines: ["Livestream rooms, church audio, CCTV.", "Set up, cabled, and kept running."],
+    tags: ["Livestream", "Audio", "Structured cabling"],
+  },
+];
+
+export const toolbox = [
+  {
+    group: "Web",
+    items: ["Astro", "Next.js", "React", "Vite", "Tailwind CSS", "Vanilla JS", "HTML & CSS"],
+  },
+  {
+    group: "Backend & data",
+    items: [
+      "PostgreSQL",
+      "Prisma",
+      "WordPress REST API",
+      "JWT auth",
+      "Google OAuth",
+      "Apps Script",
+      "Google Sheets",
+    ],
+  },
+  { group: "Mobile", items: ["Kotlin", "Android", "Capacitor"] },
+  { group: "Delivery", items: ["Git", "GitHub Actions", "GitHub Pages", "Vercel", "Hostinger"] },
+  {
+    group: "Media & AV",
+    items: ["Livestream production", "Church audio systems", "Photography", "Videography", "Canva"],
+  },
+  {
+    group: "Hardware & IT",
+    items: ["Networking", "Structured cabling", "CCTV", "Hardware procurement", "PC servicing (NC II)"],
+  },
 ];
 
 export const projects = [
@@ -37,6 +93,10 @@ export const projects = [
       "An Astro frontend pulling content from a WordPress backend over the REST API. Deploys itself via GitHub Actions to Hostinger.",
     chips: ["Astro", "WordPress REST API", "GitHub Actions"],
     link: "https://jcsgo.org",
+    term: {
+      cmd: "git push origin main",
+      lines: ["GitHub Actions builds the Astro site", "deployed to Hostinger, live at jcsgo.org"],
+    },
   },
   {
     id: "dream-campsite",
@@ -47,6 +107,10 @@ export const projects = [
       "The page for JCSGO's youth camp and retreat facility in Trece Martires, Cavite. Part of jcsgo.org, run day to day by the same person who manages the bookings.",
     chips: ["Astro", "WordPress REST API"],
     link: "https://jcsgo.org/dreamcampsite/",
+    term: {
+      cmd: "open jcsgo.org/dreamcampsite",
+      lines: ["part of the jcsgo.org build", "camp run day to day by its manager: me"],
+    },
   },
   {
     id: "seed-dome",
@@ -57,6 +121,10 @@ export const projects = [
       "Public booking page for the church's indoor basketball court. Real-time availability, GCash payment, no phone calls needed.",
     chips: ["Next.js", "PostgreSQL", "Real-time availability"],
     link: "https://jcsgo.org/basketball-court/",
+    term: {
+      cmd: "open jcsgo.org/basketball-court",
+      lines: ["real-time court availability", "GCash payment, no phone calls"],
+    },
   },
   {
     id: "declare",
@@ -67,6 +135,10 @@ export const projects = [
       "Service planning and volunteer scheduling: who's rostered, who's confirmed, and who still needs a reminder before Sunday.",
     chips: ["Next.js", "Volunteer scheduling"],
     link: "https://declare-cyan.vercel.app",
+    term: {
+      cmd: "open declare-cyan.vercel.app",
+      lines: ["deployed on Vercel", "rosters, confirmations, reminders"],
+    },
   },
   {
     id: "rental",
@@ -77,6 +149,10 @@ export const projects = [
       "Property management for Faith Desiree Property Rentals: occupancy, rent collected, and who's overdue, in one dashboard.",
     chips: ["Next.js", "Google OAuth"],
     link: "https://apartment-ashen.vercel.app",
+    term: {
+      cmd: "open apartment-ashen.vercel.app",
+      lines: ["deployed on Vercel", "Google OAuth sign-in"],
+    },
   },
   {
     id: "akeriussms",
@@ -87,6 +163,10 @@ export const projects = [
       "A Kotlin Android app that turns a spare phone into JCSGO's SMS gateway, texting approvals, rejections, and edits from three different apps.",
     chips: ["Kotlin", "Android"],
     link: null,
+    term: {
+      cmd: "run akeriussms",
+      lines: ["running on a spare Android phone", "texts approvals for three apps"],
+    },
   },
   {
     id: "qr-roster",
@@ -97,6 +177,10 @@ export const projects = [
       "Paste a class list, generate one scannable code per student for recitation and attendance, and export the whole set as a ZIP. No installs, runs entirely in the browser.",
     chips: ["Vanilla JS", "No login"],
     link: "https://markkevinalberto.github.io/qr-Generator/student-qr-roster-generator.html",
+    term: {
+      cmd: "open qr-Generator",
+      lines: ["hosted on GitHub Pages", "runs fully in the browser, no installs"],
+    },
   },
   {
     id: "grade-hub",
@@ -108,6 +192,11 @@ export const projects = [
       "An Apps Script bound to the grading sheet: adds a Grade Hub menu, loads a roster on demand, and walks a teacher through cascading dropdowns instead of raw spreadsheet cells.",
     chips: ["Apps Script", "Google Sheets"],
     link: null,
+    term: {
+      prompt: "▸",
+      cmd: "onOpen()",
+      lines: ["Grade Hub menu added to the sheet", "bound to a private grading spreadsheet"],
+    },
   },
 ];
 

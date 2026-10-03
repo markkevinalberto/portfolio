@@ -43,31 +43,29 @@ export default function RoomGridDemo() {
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap gap-5 font-mono-label text-sm text-white/75">
+      <div className="mb-4 flex flex-wrap gap-5 font-mono text-sm text-cream-50/75">
         <span className="flex items-center gap-1.5">
           <span className="h-2.5 w-2.5 rounded-sm bg-ok" /> Open
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="h-2.5 w-2.5 rounded-sm bg-danger/60" /> Already booked
+          <span className="h-2.5 w-2.5 rounded-sm bg-brand" /> Already booked
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="h-2.5 w-2.5 rounded-sm bg-amber" /> Your selection
+          <span className="h-2.5 w-2.5 rounded-sm bg-cream-50" /> Your selection
         </span>
       </div>
 
-      <div className="grid grid-cols-[70px_repeat(6,1fr)] gap-1.5 rounded-md border border-white/10 bg-ink-900 p-3">
+      <div className="grid grid-cols-[70px_repeat(6,1fr)] gap-1.5 rounded-lg border border-cream-50/15 bg-ink-900 p-3">
         <div />
         {hours.map((h) => (
-          <div key={h} className="text-center font-mono-label text-xs text-white/60">
+          <div key={h} className="text-center font-mono text-xs text-cream-50/55">
             {h}
           </div>
         ))}
 
         {roomGridRooms.map((room, r) => (
           <Fragment key={room}>
-            <div className="flex items-center px-1 font-mono-label text-xs text-white/60">
-              {room}
-            </div>
+            <div className="flex items-center px-1 font-mono text-xs text-cream-50/55">{room}</div>
             {cells.slice(r * 6, r * 6 + 6).map((cell) => {
               const isSelected = selected.has(cell.idx);
               return (
@@ -78,10 +76,10 @@ export default function RoomGridDemo() {
                   onClick={() => handleClick(cell)}
                   className={`h-9 rounded-sm border transition-transform duration-150 ${
                     cell.booked
-                      ? "cursor-not-allowed border-white/10 bg-danger/20 hover:border-danger"
+                      ? "cursor-not-allowed border-brand/60 bg-brand/40 hover:border-brand"
                       : isSelected
-                      ? "border-amber bg-amber"
-                      : "border-white/10 bg-ok/15 hover:-translate-y-0.5 hover:border-ok"
+                      ? "border-cream-50 bg-cream-50"
+                      : "border-cream-50/15 bg-ok/25 hover:-translate-y-0.5 hover:border-ok"
                   } ${shakeIdx === cell.idx ? "animate-[shake_0.42s_ease]" : ""}`}
                 />
               );
@@ -91,8 +89,12 @@ export default function RoomGridDemo() {
       </div>
 
       <p
-        className={`mt-3 min-h-[20px] font-mono-label text-sm ${
-          message.tone === "danger" ? "text-danger" : message.tone === "ok" ? "text-ok" : "text-white/75"
+        className={`mt-3 min-h-[20px] font-mono text-sm ${
+          message.tone === "danger"
+            ? "text-brand-soft"
+            : message.tone === "ok"
+            ? "text-[#6fd59b]"
+            : "text-cream-50/75"
         }`}
       >
         {message.text}
