@@ -10,6 +10,7 @@ import {
   GitBranch,
 } from "@phosphor-icons/react";
 import profilePhoto from "../assets/profile-photo.jpg";
+import { projects } from "../data";
 
 const K = ({ children }) => <span className="text-brand">{children}</span>;
 const S = ({ children }) => <span className="text-ok">{children}</span>;
@@ -22,7 +23,7 @@ const code = [
   <>{"  "}org: <S>"JCSGO"</S>,</>,
   <>{"  "}basedIn: <S>"Quezon City, PH"</S>,</>,
   <>{"  "}builds: [<S>"web"</S>, <S>"apps"</S>, <S>"android"</S>, <S>"automation"</S>],</>,
-  <>{"  "}shipped: <N>9</N>,</>,
+  <>{"  "}shipped: <N>{projects.length + 1}</N>,</>,
   <>{"};"}</>,
   <>{" "}</>,
   <><C>// idea in, something that keeps running out</C></>,

@@ -6,6 +6,7 @@ import rentalImg from "./assets/rental.png";
 import akeriusImg from "./assets/akeriussms.jpg";
 import qrGeneratorImg from "./assets/qr-generator.jpg";
 import dreamCampsiteImg from "./assets/dreamcampsite.jpg";
+import readoraImg from "./assets/readora.jpg";
 
 export const flagshipStats = [
   { num: "40", label: "bookable rooms" },
@@ -63,6 +64,7 @@ export const toolbox = [
     group: "Backend & data",
     items: [
       "PostgreSQL",
+      "Supabase",
       "Prisma",
       "WordPress REST API",
       "JWT auth",
@@ -84,6 +86,20 @@ export const toolbox = [
 ];
 
 export const projects = [
+  {
+    id: "readora",
+    kicker: "Reading comprehension app",
+    title: "Readora",
+    image: readoraImg,
+    description:
+      "Published as DigiKuwento, with Readora the owl as guide. Learners read short stories from everyday Filipino life, then recall, sequence, and retell them; teachers score the retellings and export Phil-IRI pre- and post-test results.",
+    chips: ["Next.js 16", "Supabase", "dnd-kit", "Works offline"],
+    link: "https://digikuwento.vercel.app",
+    term: {
+      cmd: "open digikuwento.vercel.app",
+      lines: ["deployed on Vercel, data in Supabase", "keeps working offline, syncs when back online"],
+    },
+  },
   {
     id: "jcsgo",
     kicker: "Headless website",

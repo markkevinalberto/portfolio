@@ -6,7 +6,7 @@ import { ArrowUpRight } from "@phosphor-icons/react";
 import akeriusImg from "../assets/akeriussms.jpg";
 import requestPortal from "../assets/request-portal.png";
 import RoomGridDemo from "./RoomGridDemo";
-import { flagshipStats } from "../data";
+import { flagshipStats, projects } from "../data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +54,7 @@ export default function FeaturedRoomBooking() {
       <div className="wrap">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="font-mono text-xs text-brand-soft">// 09 / the flagship</p>
+            <p className="font-mono text-xs text-brand-soft">// {String(projects.length + 1).padStart(2, "0")} / the flagship</p>
             <h2 className="mt-3 font-serif text-[clamp(2.25rem,5.5vw,4.25rem)] font-black leading-[0.98] tracking-tight">
               JCSGO Central <span className="italic text-brand">Request Portal.</span>
             </h2>

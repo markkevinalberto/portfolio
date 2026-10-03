@@ -137,7 +137,7 @@ export default function ShippedWork() {
       <div className="wrap">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="font-mono text-xs text-brand">// Nine systems, mostly one church.</p>
+            <p className="font-mono text-xs text-brand">// {projects.length + 1} systems, mostly one church.</p>
             <h2 className="mt-3 font-serif text-[clamp(2.5rem,6vw,4.5rem)] font-black leading-[0.95] tracking-tight">
               Shipped, and <span className="italic text-brand">still running.</span>
             </h2>
@@ -148,8 +148,8 @@ export default function ShippedWork() {
         </div>
         <p className="mt-5 max-w-2xl text-[17px] text-ink-950/70">
           Most of these are for Jesus Christ Saves Global Outreach (JCSGO), a church running
-          services, rentals, and events across five buildings. A couple started as classroom
-          tools, then stuck around.
+          services, rentals, and events across five buildings. A few are classroom tools, for
+          reading, recitation, and grading.
         </p>
 
         <div className="mt-20 flex flex-col gap-24 md:gap-32">
