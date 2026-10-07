@@ -16,6 +16,12 @@ export const badges = [
     issuer: "Cisco Networking Academy",
   },
   {
+    kind: "credly",
+    id: "2b9cc731-e035-4f42-ae4b-a294ca106097",
+    title: "Hardware and Upgrade Support",
+    issuer: "Cisco Networking Academy",
+  },
+  {
     kind: "image",
     image: googleEducatorL1Badge,
     title: "Google Certified Educator Level 1",

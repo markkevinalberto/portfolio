@@ -60,7 +60,7 @@ export default function CertificatesPage() {
               </span>
             </div>
             <p className="mt-6 max-w-2xl text-lg text-ink-950/75">
-              {certificateCount}, from a TESDA hardware certification in 2012 to two Cisco Networking
+              {certificateCount}, from a TESDA hardware certification in 2012 to three Cisco Networking
               Academy courses in October 2026. Click any certificate to open it full size.
             </p>
           </div>

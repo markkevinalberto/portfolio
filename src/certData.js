@@ -8,6 +8,7 @@ import jcsgoAppreciation from "./assets/certs/jcsgo-appreciation.jpg";
 import cednetConvention from "./assets/certs/cednet-convention.jpg";
 import ciscoIntroCybersecurity from "./assets/certs/cisco-intro-cybersecurity.jpg";
 import ciscoCyberThreatManagement from "./assets/certs/cisco-cyber-threat-management.jpg";
+import ciscoHardwareUpgradeSupport from "./assets/certs/cisco-hardware-upgrade-support.jpg";
 
 import wthSummit from "./assets/certs/wth-summit.jpg";
 import wthEthicalHacking from "./assets/certs/wth-ethical-hacking.jpg";
@@ -80,6 +81,11 @@ export const certGroups = [
         title: "Cyber Threat Management",
         sub: "Cisco Networking Academy · issued October 2026 · verified on Credly",
         image: ciscoCyberThreatManagement,
+      },
+      {
+        title: "Hardware and Upgrade Support",
+        sub: "Cisco Networking Academy · issued October 2026 · verified on Credly",
+        image: ciscoHardwareUpgradeSupport,
       },
     ],
   },

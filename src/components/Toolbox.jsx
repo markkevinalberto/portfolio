@@ -27,7 +27,7 @@ export default function Toolbox() {
           >
             {certificateCount} certificates
           </a>
-          , from a 2012 TESDA hardware cert to two Cisco cybersecurity courses in 2026.
+          , from a 2012 TESDA hardware cert to three Cisco Networking Academy courses in 2026.
         </p>
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
