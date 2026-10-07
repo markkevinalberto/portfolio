@@ -22,6 +22,12 @@ export const badges = [
     issuer: "Cisco Networking Academy",
   },
   {
+    kind: "credly",
+    id: "20fdff85-ef24-425d-beb9-432421798b65",
+    title: "Introduction to IoT",
+    issuer: "Cisco Networking Academy",
+  },
+  {
     kind: "image",
     image: googleEducatorL1Badge,
     title: "Google Certified Educator Level 1",

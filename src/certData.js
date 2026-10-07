@@ -9,6 +9,7 @@ import cednetConvention from "./assets/certs/cednet-convention.jpg";
 import ciscoIntroCybersecurity from "./assets/certs/cisco-intro-cybersecurity.jpg";
 import ciscoCyberThreatManagement from "./assets/certs/cisco-cyber-threat-management.jpg";
 import ciscoHardwareUpgradeSupport from "./assets/certs/cisco-hardware-upgrade-support.jpg";
+import ciscoIntroIot from "./assets/certs/cisco-intro-iot.jpg";
 
 import wthSummit from "./assets/certs/wth-summit.jpg";
 import wthEthicalHacking from "./assets/certs/wth-ethical-hacking.jpg";
@@ -86,6 +87,11 @@ export const certGroups = [
         title: "Hardware and Upgrade Support",
         sub: "Cisco Networking Academy · issued October 2026 · verified on Credly",
         image: ciscoHardwareUpgradeSupport,
+      },
+      {
+        title: "Introduction to Internet of Things",
+        sub: "Cisco Networking Academy · issued October 2026 · verified on Credly",
+        image: ciscoIntroIot,
       },
     ],
   },
