@@ -17,16 +17,16 @@ export default function App() {
       <main className="bg-dots relative w-full max-w-full overflow-x-clip">
         <LineGutter />
         <Hero />
+        <section id="credentials" className="relative pb-8 pt-4 md:pb-12 md:pt-8">
+          <div className="wrap">
+            <VerifiedBadges />
+          </div>
+        </section>
         <ResumePreview />
         <Marquee />
         <Services />
         <ShippedWork />
         <FeaturedRoomBooking />
-        <section id="credentials" className="relative py-24 md:py-32">
-          <div className="wrap">
-            <VerifiedBadges />
-          </div>
-        </section>
         <Toolbox />
         <CTAFooter />
       </main>
