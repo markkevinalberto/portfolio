@@ -7,6 +7,7 @@ import akeriusImg from "./assets/akeriussms.jpg";
 import qrGeneratorImg from "./assets/qr-generator.jpg";
 import dreamCampsiteImg from "./assets/dreamcampsite.jpg";
 import readoraImg from "./assets/readora.jpg";
+import shofrImg from "./assets/shofr.jpg";
 
 export const flagshipStats = [
   { num: "40", label: "bookable rooms" },
@@ -66,6 +67,9 @@ export const toolbox = [
       "PostgreSQL",
       "Supabase",
       "Prisma",
+      "Node.js",
+      "Socket.IO",
+      "LiveKit (WebRTC)",
       "WordPress REST API",
       "JWT auth",
       "Google OAuth",
@@ -73,7 +77,7 @@ export const toolbox = [
       "Google Sheets",
     ],
   },
-  { group: "Mobile", items: ["Kotlin", "Android", "Capacitor"] },
+  { group: "Mobile", items: ["React Native (Expo)", "Kotlin", "Android", "Capacitor", "PWA"] },
   { group: "Delivery", items: ["Git", "GitHub Actions", "GitHub Pages", "Vercel", "Hostinger"] },
   {
     group: "Media & AV",
@@ -86,6 +90,20 @@ export const toolbox = [
 ];
 
 export const projects = [
+  {
+    id: "shofr",
+    kicker: "Push-to-talk radio app",
+    title: "SHOFR",
+    image: shofrImg,
+    description:
+      "Named for the shofar, the horn that calls people together. Turns phones into push-to-talk radios for event crews, security, and production teams: hold TALK, speak, release, and the whole channel hears you over Wi-Fi, 4G, or 5G. Also runs as a hands-free intercom, and nothing is ever recorded.",
+    chips: ["React Native (Expo)", "LiveKit WebRTC", "Node.js + Socket.IO", "Android APK + web app"],
+    link: "https://shofr.duckdns.org/get",
+    term: {
+      cmd: "open shofr.duckdns.org/get",
+      lines: ["Android APK v0.1.0 and a browser web app", "~53 ms press-to-heard in a 10-radio local load test"],
+    },
+  },
   {
     id: "readora",
     kicker: "Reading comprehension app",
