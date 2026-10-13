@@ -35,6 +35,9 @@ export default {
       maxWidth: {
         "5xl": "64rem",
       },
+      transitionTimingFunction: {
+        spring: "cubic-bezier(0.32, 0.72, 0, 1)",
+      },
       boxShadow: {
         offset: "8px 8px 0 #f4b4a9",
         "offset-lg": "12px 12px 0 #f4b4a9",
