@@ -14,7 +14,7 @@ import RoomGridDemo from "./RoomGridDemo";
 import { Bezel, Eyebrow, PillLink, Reveal } from "./ui";
 import { flagshipStats, projects } from "../data";
 
-const PORTAL = "https://jcsgo-room-booking.vercel.app";
+const PORTAL = "https://jcsgo-room-booking.vercel.app/welcome";
 const CHIPS = ["Next.js 16", "Prisma", "PostgreSQL", "JWT auth", "Capacitor / Android"];
 const SENTENCE =
   "Every request from the church website, the SEED DOME court page, and a spare Android phone running AkeriusSMS all pass through the same Postgres rule before anyone gets a text back.";
@@ -113,7 +113,7 @@ export default function FeaturedRoomBooking() {
                       <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
                     </div>
                     <span className="truncate rounded-full bg-white/[0.05] px-3 py-1 text-[11px] text-cream-50/55 ring-1 ring-white/[0.06]">
-                      jcsgo-room-booking.vercel.app
+                      jcsgo-room-booking.vercel.app/welcome
                     </span>
                     <span className="ml-auto flex shrink-0 items-center gap-1.5 text-[11px] text-[#7fe0a8]">
                       <span className="relative flex h-1.5 w-1.5">
