@@ -62,7 +62,7 @@ export function Bezel({ radius = 32, pad = 6, tone, dark = false, className = ""
 export function Eyebrow({ children, dark = false }) {
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] ring-1 ${
+      className={`inline-flex w-fit self-start items-center gap-2 rounded-full px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] ring-1 ${
         dark ? "bg-cream-50/10 text-cream-50/75 ring-cream-50/15" : "bg-white/70 text-ink-950/65 ring-ink-950/[0.08]"
       }`}
     >

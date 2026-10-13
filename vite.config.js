@@ -14,6 +14,7 @@ export default defineConfig({
         main: r('./index.html'),
         certificates: r('./certificates.html'),
         resume: r('./resume.html'),
+        v2: r('./v2.html'),
       },
     },
   },

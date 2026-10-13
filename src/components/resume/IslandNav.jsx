@@ -4,21 +4,29 @@ import { PillLink } from "../ui";
 
 const home = import.meta.env.BASE_URL;
 
-const sections = [
+const resumeSections = [
   { label: "Credentials", href: "#credentials" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
 ];
 
-const menuLinks = [
-  ...sections,
+const resumeMenu = [
+  ...resumeSections,
   { label: "Portfolio", href: home },
   { label: "Certificates", href: `${home}certificates.html` },
   { label: "Download PDF", href: `${home}resume.pdf`, external: true },
 ];
 
-export default function IslandNav() {
+const resumeCta = { label: "Resume PDF", href: `${home}resume.pdf`, icon: DownloadSimple, external: true };
+
+export default function IslandNav({
+  sections = resumeSections,
+  menuLinks = resumeMenu,
+  cta = resumeCta,
+  surface = "bg-cream-50/80",
+  brandHref = home,
+}) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -36,8 +44,10 @@ export default function IslandNav() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-5 md:pt-6">
-        <nav className="flex w-full max-w-md items-center justify-between gap-3 rounded-full bg-cream-50/80 py-1.5 pl-1.5 pr-1.5 shadow-[0_20px_44px_-26px_rgba(23,13,10,0.4)] ring-1 ring-ink-950/[0.08] backdrop-blur-xl md:w-max md:max-w-none md:gap-7">
-          <a href={home} className="flex items-center gap-2.5 pr-2">
+        <nav
+          className={`flex w-full max-w-md items-center justify-between gap-3 rounded-full ${surface} py-1.5 pl-1.5 pr-1.5 shadow-[0_20px_44px_-26px_rgba(23,13,10,0.4)] ring-1 ring-ink-950/[0.08] backdrop-blur-xl md:w-max md:max-w-none md:gap-7`}
+        >
+          <a href={brandHref} className="flex items-center gap-2.5 pr-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink-950 font-serif text-sm font-semibold text-cream-50">
               K
             </span>
@@ -53,8 +63,13 @@ export default function IslandNav() {
           </div>
 
           <div className="hidden md:block">
-            <PillLink href={`${home}resume.pdf`} target="_blank" rel="noopener" icon={DownloadSimple} size="sm">
-              Resume PDF
+            <PillLink
+              href={cta.href}
+              icon={cta.icon}
+              size="sm"
+              {...(cta.external ? { target: "_blank", rel: "noopener" } : {})}
+            >
+              {cta.label}
             </PillLink>
           </div>
 
@@ -83,7 +98,7 @@ export default function IslandNav() {
       <div
         id="resume-menu"
         aria-hidden={!open}
-        className={`fixed inset-0 z-40 bg-cream-50/80 backdrop-blur-3xl transition-opacity duration-700 ease-spring md:hidden ${
+        className={`fixed inset-0 z-40 ${surface} backdrop-blur-3xl transition-opacity duration-700 ease-spring md:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
