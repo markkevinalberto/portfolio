@@ -39,16 +39,18 @@ const tones = {
   white: "bg-white",
   cream: "bg-cream-100",
   ink: "bg-ink-950 text-cream-50",
+  glass: "bg-[#0b0b0d] text-cream-50",
 };
 
-export function Bezel({ radius = 32, pad = 6, tone = "white", className = "", coreClassName = "", children }) {
+export function Bezel({ radius = 32, pad = 6, tone, dark = false, className = "", coreClassName = "", children }) {
+  const shell = dark ? "bg-white/[0.03] ring-1 ring-white/[0.08]" : "bg-ink-950/[0.035] ring-1 ring-ink-950/[0.06]";
+  const depth = dark
+    ? "shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)]"
+    : "shadow-[inset_0_1px_1px_rgba(255,255,255,0.85),0_30px_60px_-36px_rgba(23,13,10,0.28)]";
   return (
-    <div
-      className={`bg-ink-950/[0.035] ring-1 ring-ink-950/[0.06] ${className}`}
-      style={{ borderRadius: radius, padding: pad }}
-    >
+    <div className={`${shell} ${className}`} style={{ borderRadius: radius, padding: pad }}>
       <div
-        className={`h-full overflow-hidden shadow-[inset_0_1px_1px_rgba(255,255,255,0.85),0_30px_60px_-36px_rgba(23,13,10,0.28)] ${tones[tone]} ${coreClassName}`}
+        className={`h-full overflow-hidden ${depth} ${tones[tone ?? (dark ? "glass" : "white")]} ${coreClassName}`}
         style={{ borderRadius: radius - pad }}
       >
         {children}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { DownloadSimple } from "@phosphor-icons/react";
-import { PillLink } from "./ui";
+import { PillLink } from "../ui";
 
 const home = import.meta.env.BASE_URL;
 

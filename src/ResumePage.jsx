@@ -9,7 +9,7 @@ import {
   Trophy,
 } from "@phosphor-icons/react";
 import IslandNav from "./components/resume/IslandNav";
-import { Bezel, Eyebrow, PillLink, Reveal } from "./components/resume/ui";
+import { Bezel, Eyebrow, PillLink, Reveal } from "./components/ui";
 import { badges } from "./badges";
 import { certificateCount } from "./certData";
 import profilePhoto from "./assets/profile-photo.jpg";
