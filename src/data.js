@@ -94,7 +94,7 @@ export const projects = [
   {
     id: "meet-attendance",
     kicker: "Browser extension for teachers",
-    title: "Tala",
+    title: "Tala - Your class secretary",
     image: meetAttendanceImg,
     description:
       "Built for my wife, a teacher (Tala is Filipino for \"star\" and \"record\"). Takes attendance in Google Meet on its own: starts when class starts, checks who is in the call every minute, and saves a Google Sheet with join times, minutes present, and Present / Late / Absent when class ends. Flags anyone not on the class list or using another student's name, with a desktop alert, an evidence screenshot, and a security log. Everything stays in the teacher's own Drive.",
