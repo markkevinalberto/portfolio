@@ -94,15 +94,15 @@ export const projects = [
   {
     id: "meet-attendance",
     kicker: "Browser extension for teachers",
-    title: "Meet Attendance",
+    title: "Tala",
     image: meetAttendanceImg,
     description:
-      "Built for my wife, a teacher. Takes attendance in Google Meet on its own: starts when class starts, checks who is in the call every minute, and saves a Google Sheet with join times, minutes present, and Present / Late / Absent when class ends. Flags anyone not on the class list or using another student's name, with a desktop alert, an evidence screenshot, and a security log. Everything stays in the teacher's own Drive.",
-    chips: ["Chrome/Edge extension (MV3)", "Google Drive + Sheets API", "OAuth (drive.file only)", "Remotion promo video"],
+      "Built for my wife, a teacher (Tala is Filipino for \"star\" and \"record\"). Takes attendance in Google Meet on its own: starts when class starts, checks who is in the call every minute, and saves a Google Sheet with join times, minutes present, and Present / Late / Absent when class ends. Flags anyone not on the class list or using another student's name, with a desktop alert, an evidence screenshot, and a security log. Everything stays in the teacher's own Drive.",
+    chips: ["Chrome/Edge extension (MV3)", "Google Drive + Sheets + Classroom APIs", "OAuth (drive.file only)", "Remotion promo video"],
     link: "https://markkevinalberto.github.io/portfolio/meet-attendance-promo.mp4",
     term: {
       cmd: "play meet-attendance-promo.mp4",
-      lines: ["Works in Chrome, Edge, and Brave with any Google account", "Auto start and end, intruder alerts, verified-email check-in"],
+      lines: ["Works in Chrome, Edge, and Brave with any Google account", "Google Classroom roster sync, auto start and end, intruder alerts"],
     },
   },
   {
