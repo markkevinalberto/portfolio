@@ -6,6 +6,7 @@ import Marquee from "./components/Marquee";
 import Services from "./components/Services";
 import ShippedWork from "./components/ShippedWork";
 import FeaturedRoomBooking from "./components/FeaturedRoomBooking";
+import MadeWithClaude from "./components/MadeWithClaude";
 import VerifiedBadges from "./components/VerifiedBadges";
 import Toolbox from "./components/Toolbox";
 import CTAFooter from "./components/CTAFooter";
@@ -27,6 +28,7 @@ export default function App() {
         <Services />
         <ShippedWork />
         <FeaturedRoomBooking />
+        <MadeWithClaude />
         <Toolbox />
         <CTAFooter />
       </main>

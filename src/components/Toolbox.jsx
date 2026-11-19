@@ -34,7 +34,7 @@ export default function Toolbox() {
           {toolbox.map((g, i) => (
             <div
               key={g.group}
-              className={`rounded-2xl border-2 border-ink-950 bg-white p-6 shadow-offset transition duration-300 hover:rotate-0 ${tilts[i % tilts.length]}`}
+              className={`rounded-2xl border-2 border-ink-950 bg-white p-6 shadow-offset transition duration-300 hover:rotate-0 ${tilts[i % tilts.length]} ${g.wide ? "sm:col-span-2 lg:col-span-3" : ""}`}
             >
               <p className="font-mono text-xs text-brand">// {g.group}</p>
               <div className="mt-4 flex flex-wrap gap-2">

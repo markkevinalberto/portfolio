@@ -47,6 +47,16 @@ export const skillGroups = [
       "Kotlin / Android",
     ],
   },
+  {
+    group: "AI Tools",
+    skills: [
+      "Claude & Claude Code",
+      "ChatGPT",
+      "Google Flow",
+      "ElevenLabs Voice",
+      "AI Video Editing (Remotion)",
+    ],
+  },
 ];
 
 export const experience = [

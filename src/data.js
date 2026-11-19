@@ -57,7 +57,58 @@ export const services = [
   },
 ];
 
+// Videos in the "Made with Claude" section; files live in public/videos/claude (mp4 + poster jpg),
+// unless `video` names a file already published at the site root.
+export const claudeVideos = [
+  {
+    id: "declare-promo",
+    title: "Declare promo",
+    kind: "Product promo · 1:08",
+    desc: "A one-minute explainer for my volunteer scheduling app, written as React code in Remotion with Claude Code and rendered with voice-over.",
+    chips: ["Claude Code", "Remotion", "React"],
+    aspect: "aspect-video",
+  },
+  {
+    id: "digikuwento-demo",
+    title: "DigiKuwento demo",
+    kind: "App walkthrough · 3:26",
+    desc: "A guided tour of the DigiKuwento reading app, from reading a story to scoring a retelling, animated scene by scene in Remotion.",
+    chips: ["Claude Code", "Remotion", "Screen tour"],
+    aspect: "aspect-video",
+  },
+  {
+    id: "meet-attendance",
+    video: "meet-attendance-promo.mp4",
+    title: "Tala promo",
+    kind: "Extension promo · 1:41",
+    desc: "The promo for Tala, my Google Meet attendance extension for teachers, narrated in my own cloned voice.",
+    chips: ["Claude Code", "Remotion", "ElevenLabs"],
+    aspect: "aspect-[9/16]",
+  },
+  {
+    id: "sermon-reel",
+    title: "Hindi Talento ang Hanap Niya",
+    kind: "Sermon reel · 0:56",
+    desc: "Ps Marie Cagayan's sermon cut into a vertical reel with captions and motion graphics, by Claude Code running free247editor.",
+    chips: ["Claude Code", "free247editor", "Reels 9:16"],
+    aspect: "aspect-[9/16]",
+  },
+  {
+    id: "araw-araw-na-pagpapala",
+    title: "Araw Araw na Pagpapala",
+    kind: "Daily devotional · 4:47",
+    desc: "“Love God, Love Others as Yourself” with Ps Edwin Ditan, edited for JCSGO's daily devotional series.",
+    chips: ["Claude Code", "free247editor", "Square 1:1"],
+    aspect: "aspect-square",
+  },
+];
+
 export const toolbox = [
+  {
+    group: "AI tools",
+    items: ["Claude", "Claude Code", "ChatGPT", "Google Flow"],
+    wide: true,
+  },
   {
     group: "Web",
     items: ["Astro", "Next.js", "React", "Vite", "Tailwind CSS", "Vanilla JS", "HTML & CSS", "Browser extensions (MV3)"],

@@ -266,7 +266,7 @@ export default function ResumePage() {
               What I <span className="italic text-brand">bring.</span>
             </>
           }
-          lead="Leadership in media and production, hands-on IT, and the tools that hold it together."
+          lead="Leadership in media and production, hands-on IT, the AI tools I build with, and the software that holds it together."
         >
           <div className="flex flex-col gap-6">
             {skillGroups.map((g, i) => (

@@ -4,6 +4,7 @@ const home = import.meta.env.BASE_URL;
 
 const links = [
   { label: "Work", href: `${home}#work` },
+  { label: "Claude", href: `${home}#claude` },
   { label: "Credentials", href: `${home}#credentials` },
   { label: "Certificates", href: `${home}certificates.html` },
   { label: "Resume", href: `${home}resume.html` },
