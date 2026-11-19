@@ -79,14 +79,19 @@ function ClaudeTerminal() {
   );
 }
 
+// A featured video sits beside its details on large screens instead of above them.
 function VideoCard({ v, n }) {
   return (
-    <article className="claude-card border-[2.5px] border-ink-950 bg-white p-3 shadow-offset-lg">
-      <div className="mb-2 flex items-center justify-between font-mono text-[11px] text-ink-950/70">
+    <article
+      className={`claude-card border-[2.5px] border-ink-950 bg-white p-3 shadow-offset-lg ${
+        v.featured ? "lg:grid lg:grid-cols-3 lg:items-center lg:gap-8 lg:p-4" : ""
+      }`}
+    >
+      <div className={`mb-2 flex items-center justify-between font-mono text-[11px] text-ink-950/70 ${v.featured ? "lg:hidden" : ""}`}>
         <span>{String(n).padStart(2, "0")} /</span>
         <span className="text-brand">{v.kind}</span>
       </div>
-      <div className={`overflow-hidden border-2 border-ink-950 bg-ink-950 ${v.aspect}`}>
+      <div className={`overflow-hidden border-2 border-ink-950 bg-ink-950 ${v.aspect} ${v.featured ? "lg:col-span-2" : ""}`}>
         <video
           className="h-full w-full object-contain"
           src={v.video ? `${base}${v.video}` : `${base}videos/claude/${v.id}.mp4`}
@@ -96,8 +101,19 @@ function VideoCard({ v, n }) {
           playsInline
         />
       </div>
-      <div className="px-1 pb-1 pt-4">
-        <h3 className="font-serif text-2xl font-black leading-tight tracking-tight">{v.title}</h3>
+      <div className="px-1 pb-1 pt-4 lg:pt-0">
+        {v.featured && (
+          <p className="hidden font-mono text-[11px] text-brand lg:block">
+            {String(n).padStart(2, "0")} / {v.kind}
+          </p>
+        )}
+        <h3
+          className={`font-serif font-black leading-tight tracking-tight ${
+            v.featured ? "text-2xl lg:mt-3 lg:text-4xl" : "text-2xl"
+          }`}
+        >
+          {v.title}
+        </h3>
         <p className="mt-2 text-[15px] leading-relaxed text-ink-950/70">{v.desc}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {v.chips.map((c) => (
@@ -127,7 +143,7 @@ const editSteps = [
 
 export default function MadeWithClaude() {
   const scope = useRef(null);
-  const [promo, demo, explainer, reel, devotional] = claudeVideos;
+  const [midweek, promo, demo, explainer, reel, devotional] = claudeVideos;
 
   useGSAP(
     () => {
@@ -188,16 +204,20 @@ export default function MadeWithClaude() {
           </div>
         </div>
 
-        <div className="mt-24 grid gap-10 md:grid-cols-2">
-          <VideoCard v={promo} n={1} />
-          <VideoCard v={demo} n={2} />
+        <div className="mt-24">
+          <VideoCard v={midweek} n={1} />
+        </div>
+
+        <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <VideoCard v={promo} n={2} />
+          <VideoCard v={demo} n={3} />
         </div>
 
         <div className="mt-10 grid items-start gap-10 md:grid-cols-2 lg:grid-cols-3">
-          <VideoCard v={explainer} n={3} />
-          <VideoCard v={reel} n={4} />
+          <VideoCard v={explainer} n={4} />
+          <VideoCard v={reel} n={5} />
           <div className="flex flex-col gap-10 md:col-span-2 lg:col-span-1">
-            <VideoCard v={devotional} n={5} />
+            <VideoCard v={devotional} n={6} />
             <div className="claude-card rounded-2xl border-[2.5px] border-ink-950 bg-ink-950 p-6 text-cream-50 shadow-offset-lg">
               <div className="flex items-center gap-2">
                 <Spark className="h-5 w-5 text-[#d97757]" />

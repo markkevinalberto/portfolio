@@ -61,6 +61,15 @@ export const services = [
 // unless `video` names a file already published at the site root.
 export const claudeVideos = [
   {
+    id: "midweek-preview",
+    title: "Serve God Wholeheartedly",
+    kind: "Midweek Celebration preview · 1:32",
+    desc: "A preview of an Online Thursday Celebration message by Ps Lerma De Dios: shot on green screen, keyed into an office backdrop, with scripture cards, a five-part outline, captions, and the announcements, all edited by Claude Code with free247editor.",
+    chips: ["Claude Code", "free247editor", "Green-screen key", "Remotion graphics"],
+    aspect: "aspect-video",
+    featured: true,
+  },
+  {
     id: "declare-promo",
     title: "Declare promo",
     kind: "Product promo · 1:08",
